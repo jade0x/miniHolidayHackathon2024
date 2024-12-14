@@ -17,6 +17,11 @@
     width: 100%;
     margin: 0;
     padding: 0;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "main"
+      "left"
+      "right";
   }
 
   .middle-content,

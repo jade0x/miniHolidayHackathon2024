@@ -23,8 +23,10 @@ header {
 }
 
 .container {
+  width: 100%;
   max-width: 960px;
   margin: 0;
+  padding: 0;
   overflow: hidden;
   background-color: red;
 }
@@ -34,22 +36,26 @@ header {
   grid-template-columns: 180px 600px 180px;
   grid-template-areas: "left main right";
   justify-content: center;
+  gap: 0;
 }
 
 .aside-left {
   grid-area: left;
+  width: 100%;
   padding: 1rem;
   background-color: blue;
 }
 
 .middle-content {
   grid-area: main;
+  width: 100%;
   padding: 0 2rem;
   background-color: green;
 }
 
 .aside-right {
   grid-area: right;
+  width: 100%;
   padding: 1rem;
   background-color: purple;
 }
