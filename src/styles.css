@@ -10,9 +10,79 @@ html {
 
 body {
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
   background-image: url(/src/img/cloudsbg.jpeg);
   font-size: 1.6rem;
   font-family: Arial, sans-serif;
 }
+
+/* "Marquee" Banner */
+.marquee {
+  width: 100%;
+  background-color: blue;
+  overflow: hidden;
+}
+
+.marquee-text {
+  display: inline-block;
+  animation: scroll 20s linear infinite, rainbow-hsl 5s linear infinite;
+  white-space: nowrap;
+  text-shadow: 1px 1px #000;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes rainbow-hsl {
+  0% {
+    color: hsl(0, 80%, 50%);
+  }
+  20% {
+    color: hsl(72, 80%, 50%);
+  }
+  40% {
+    color: hsl(144, 80%, 50%);
+  }
+  60% {
+    color: hsl(216, 80%, 50%);
+  }
+  80% {
+    color: hsl(288, 80%, 50%);
+  }
+  100% {
+    color: hsl(360, 80%, 50%);
+  }
+}
+
+/* 1. RESET/NORMALIZE */
+/* 2. HTML & BODY DEFAULTS */
+
+/* 3. LAYOUT & GRID */
+
+/* 4. HEADER */
+/* Header styles */
+
+/* 5. NAVIGATION */
+/* Navigation styles */
+
+/* 6. MAIN CONTENT */
+/* Main content styles */
+
+/* 7. COMPONENTS */
+/* Component styles */
+
+/* 8. FORMS */
+/* Form styles */
+
+/* 9. UTILITIES */
+
+/* 10. ANIMATIONS */
+/* Animation definitions */
+
+/* 11. MEDIA QUERIES */
+/* Responsive styles */
