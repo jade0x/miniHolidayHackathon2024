@@ -1,0 +1,45 @@
+@media screen and (max-width: 960px) {
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 1rem;
+    overflow: visible;
+  }
+
+  .wrapper {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .middle-content,
+  .aside-left,
+  .aside-right {
+    width: 100%;
+    max-width: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+
+  .featured {
+    width: 100%;
+  }
+
+  .section-1 {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .feature-message {
+    width: 100%;
+    text-align: center;
+  }
+}

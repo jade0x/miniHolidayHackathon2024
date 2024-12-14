@@ -10,6 +10,8 @@ html {
 
 body {
   min-height: 100vh;
+  width: 960px;
+  margin-left: 0;
   background-image: url(/src/img/cloudsbg.jpeg);
   font-size: 1.6rem;
   font-family: "Comic Sans MS", "Comic Sans", cursive;
@@ -21,68 +23,35 @@ header {
 }
 
 .container {
-  max-width: 1100px;
-  margin: 2rem auto;
+  max-width: 960px;
+  margin: 0;
   overflow: hidden;
+  background-color: red;
 }
 
 .wrapper {
   display: grid;
-  grid-template-columns: 250px 600px 250px;
+  grid-template-columns: 180px 600px 180px;
   grid-template-areas: "left main right";
   justify-content: center;
 }
 
 .aside-left {
   grid-area: left;
-  padding: 2rem;
+  padding: 1rem;
+  background-color: blue;
 }
 
 .middle-content {
   grid-area: main;
-  padding: 2rem;
+  padding: 0 2rem;
+  background-color: green;
 }
 
 .aside-right {
   grid-area: right;
-  padding: 2rem;
-}
-
-@media (max-width: 1200px) {
-  .container {
-    margin: 0;
-    border-radius: 0;
-  }
-
-  .wrapper {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "main"
-      "left"
-      "right";
-    margin-top: 2rem;
-  }
-
-  .middle-content {
-    max-width: 600px;
-    margin: 0 auto;
-    width: 100%;
-  }
-
-  .aside-left,
-  .aside-right {
-    max-width: 600px;
-    margin: 0 auto;
-    width: 100%;
-  }
-
-  .aside-left {
-    margin-top: 2rem;
-  }
-
-  .aside-right {
-    border-left: none;
-  }
+  padding: 1rem;
+  background-color: purple;
 }
 
 footer {
@@ -97,10 +66,34 @@ h1 {
   text-shadow: 0 0 2px black;
 }
 
+h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3rem;
+}
+
 .marquee {
   width: 100%;
   background-color: #284ac8;
   overflow: hidden;
+}
+
+.featured {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.section-1 {
+  display: flex;
+  align-items: flex-start;
+}
+
+.section-1 img {
+  flex-shrink: 0;
+}
+
+.feature-message {
+  flex-grow: 1;
 }
 
 .marquee-text {
@@ -112,6 +105,14 @@ h1 {
 
 .rainbow-text {
   animation: rainbow-colors 4s linear infinite;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
 }
 
 @keyframes scroll {
