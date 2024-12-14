@@ -12,13 +12,94 @@ body {
   min-height: 100vh;
   background-image: url(/src/img/cloudsbg.jpeg);
   font-size: 1.6rem;
-  font-family: Arial, sans-serif;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
-/* "Marquee" Banner */
+header {
+  margin: 0px auto;
+  padding: 20px 5px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 2rem auto;
+  overflow: hidden;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 250px 600px 250px;
+  grid-template-areas: "left main right";
+  justify-content: center;
+}
+
+.aside-left {
+  grid-area: left;
+  padding: 2rem;
+}
+
+.middle-content {
+  grid-area: main;
+  padding: 2rem;
+}
+
+.aside-right {
+  grid-area: right;
+  padding: 2rem;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "main"
+      "left"
+      "right";
+    margin-top: 2rem;
+  }
+
+  .middle-content {
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .aside-left,
+  .aside-right {
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .aside-left {
+    margin-top: 2rem;
+  }
+
+  .aside-right {
+    border-left: none;
+  }
+}
+
+footer {
+  margin: 0px auto;
+  padding: 20px 5px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 6rem;
+  text-shadow: 0 0 2px black;
+}
+
 .marquee {
   width: 100%;
-  background-color: blue;
+  background-color: #284ac8;
   overflow: hidden;
 }
 
@@ -27,6 +108,10 @@ body {
   animation: scroll 20s linear infinite, rainbow-hsl 5s linear infinite;
   white-space: nowrap;
   text-shadow: 1px 1px #000;
+}
+
+.rainbow-text {
+  animation: rainbow-colors 4s linear infinite;
 }
 
 @keyframes scroll {
@@ -59,30 +144,23 @@ body {
   }
 }
 
-/* 1. RESET/NORMALIZE */
-/* 2. HTML & BODY DEFAULTS */
-
-/* 3. LAYOUT & GRID */
-
-/* 4. HEADER */
-/* Header styles */
-
-/* 5. NAVIGATION */
-/* Navigation styles */
-
-/* 6. MAIN CONTENT */
-/* Main content styles */
-
-/* 7. COMPONENTS */
-/* Component styles */
-
-/* 8. FORMS */
-/* Form styles */
-
-/* 9. UTILITIES */
-
-/* 10. ANIMATIONS */
-/* Animation definitions */
-
-/* 11. MEDIA QUERIES */
-/* Responsive styles */
+@keyframes rainbow-colors {
+  0% {
+    color: rgb(0, 255, 0);
+  }
+  20% {
+    color: rgb(0, 255, 255);
+  }
+  40% {
+    color: rgb(0, 0, 255);
+  }
+  60% {
+    color: rgb(255, 0, 255);
+  }
+  80% {
+    color: rgb(255, 0, 0);
+  }
+  100% {
+    color: rgb(0, 255, 0);
+  }
+}
