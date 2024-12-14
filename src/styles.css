@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-image: url(/src/img/cloudsbg.jpeg);
+  font-size: 1.6rem;
+  font-family: Arial, sans-serif;
+}
