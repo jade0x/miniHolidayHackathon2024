@@ -1,50 +1,50 @@
-@media screen and (max-width: 960px) {
+@media (max-width: 960px) {
   body {
     width: 100%;
-    margin: 0;
-    padding: 0;
   }
+
   .container {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 1rem;
-    overflow: visible;
-  }
-
-  .wrapper {
-    display: block;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "main"
-      "left"
-      "right";
-  }
-
-  .middle-content,
-  .aside-left,
-  .aside-right {
-    width: 100%;
-    max-width: 100%;
-    margin: 1rem 0;
-    padding: 1rem;
-  }
-
-  .featured {
-    width: 100%;
-  }
-
-  .section-1 {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
   }
 
-  .feature-message {
+  .container > * {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  main {
+    width: 600px;
+    max-width: 100%;
+    order: 1;
+  }
+
+  .left-sidebar,
+  .right-sidebar {
     width: 100%;
-    text-align: center;
+    max-width: 180px;
+    order: 2;
+  }
+
+  .left-sidebar {
+    grid-row: 2;
+  }
+
+  .right-sidebar {
+    grid-row: 3;
+  }
+
+  .section-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .column-1 {
+    flex: 0 0 auto;
+  }
+
+  .column-2 {
+    flex: 1;
   }
 }
