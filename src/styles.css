@@ -129,11 +129,14 @@ nav a:hover {
   background-color: maroon;
 }
 
+.article-wrapper {
+  margin: 10px;
+}
+
 .regular {
-  margin: 1px;
-  padding: 5px;
   border: 4px solid #86a0ff;
   border-radius: 20px;
+  padding: 5px;
   background-color: white;
 }
 
