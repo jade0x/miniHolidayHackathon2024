@@ -213,6 +213,17 @@
         <div class="sidebar-item">
           <h4>'*•.¸♡ Page Hits! ♡¸.•*'</h4>
           <div id="visit-count">Loading visits...</div>
+          <script>
+            function cb(response) {
+              document.getElementById(
+                "visit-count"
+              ).innerText = `This page has been visited ${response.value} times`;
+            }
+          </script>
+          <script
+            async
+            src="https://api.countapi.xyz/hit/holidayhack2024.netlify.app/visits?callback=cb"
+          ></script>
         </div>
         <div>clap fpr me</div>
         <div>music player</div>
