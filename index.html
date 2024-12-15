@@ -143,7 +143,7 @@
         </article>
         <div class="article-wrapper">
           <article class="middle-section regular">
-            <h3>╔═════════ ≪ °❈ About This Site ❈° ≫ ═════════╗</h3>
+            <h3>≪ °❈ About This Site ❈° ≫</h3>
             <div class="section-2">
               <div class="column-1">
                 <img
@@ -184,6 +184,7 @@
               </div>
               <div class="column-2">
                 <p>
+                  <br />
                   I have always had a great love for the internet, specifically,
                   having my own custom corner of the web. This corner has
                   changed, not just as I have grown up, but with platform and
@@ -196,10 +197,6 @@
                 </p>
               </div>
             </div>
-            <p>
-              Click here <a href="">Full break down of the site & demo</a> click
-              here
-            </p>
           </article>
         </div>
         <article>About Me</article>
@@ -208,25 +205,36 @@
         <article>Photos</article>
       </main>
       <aside class="right-sidebar">
-        <h2>Right Sidebar</h2>
-        <p>Additional content or widgets can go here.</p>
         <div class="sidebar-item">
           <h4>'*•.¸♡ Page Hits! ♡¸.•*'</h4>
-          <div id="visit-count">This is visit #0 &lt;3</div>
+          <div id="visit-count">...</div>
         </div>
+
+        <script>
+          function cb(response) {
+            document.getElementById(
+              "visit-count"
+            ).innerText = `This page has been visited ${response.value} times`;
+          }
+        </script>
+        <script
+          async
+          src="https://api.countapi.xyz/hit/holidayhack2024.netlify.app/visits?callback=cb"
+        ></script>
+
         <div class="sidebar-item">
           <h4>'*•.¸♡ Currently ♡¸.•*'</h4>
-          <ul>
-            <li><strong>Reading:</strong></li>
-            <li><strong>Watching:</strong></li>
-            <li><strong>Listening to:</strong></li>
-          </ul>
+          <div class="inner-item">
+            <ul>
+              <li><strong>Reading:</strong>Harry Potter</li>
+              <li><strong>Watching:</strong>She's All that</li>
+              <li>
+                <strong>Listening to:</strong>Britney Spears "Baby One More
+                Time"
+              </li>
+            </ul>
+          </div>
         </div>
-        <div>clap fpr me</div>
-        <div>music player</div>
-        <div>sign my guest book</div>
-        <div>currently</div>
-        <div>chatbox</div>
       </aside>
     </div>
     <footer>

@@ -45,6 +45,7 @@ aside {
 main {
   background: #ffffff;
   width: 100%;
+  font-size: 1.4rem;
 }
 
 footer {
@@ -63,10 +64,14 @@ h2 {
   font-family: "Times New Roman", Times, serif;
   font-size: 3rem;
   text-align: center;
+  padding: 5px 0;
 }
 
 h3 {
+  padding: 4px 0;
   text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 
 h4 {
@@ -89,10 +94,14 @@ nav a:hover {
   cursor: pointer;
 }
 
+li {
+  list-style-type: none;
+}
+
 .middle-section {
   display: flex;
   flex-direction: column;
-  margin: 0.5rem 0;
+  margin: 0 0;
   width: 100%;
 }
 
@@ -191,13 +200,6 @@ nav a:hover {
   transform: scale(1.1);
 }
 
-.sidebar-section {
-  background-color: brown;
-  border: 5px solid yellow;
-  outline: 5px solid blue;
-  outline-offset: -20px;
-}
-
 .social-wrapper {
   display: block;
 }
@@ -276,6 +278,11 @@ a.social-button {
   background-color: white;
   padding-bottom: 3px;
   margin: 10px 0;
+}
+
+.inner-item {
+  padding: 2px 5px;
+  line-height: 1.5;
 }
 
 #visit-count {
