@@ -200,6 +200,18 @@ li {
   transform: scale(1.1);
 }
 
+.sidebar-button button {
+  display: block;
+  margin: 1rem auto;
+  background: none;
+  border: none;
+  padding: 0;
+  transition: transform 0.2 ease;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
 .social-wrapper {
   display: block;
 }
@@ -280,12 +292,16 @@ a.social-button {
   margin: 10px 0;
 }
 
+.sidebar-item img {
+  width: 100%;
+}
+
 .inner-item {
   padding: 2px 5px;
   line-height: 1.5;
 }
 
-#visit-count {
+#visits {
   margin: 2px;
   background-color: white;
   text-align: center;
