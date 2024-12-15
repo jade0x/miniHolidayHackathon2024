@@ -29,7 +29,7 @@ colours = new Array(
   "ff00ff"
 );
 
-n = 10;
+n = 0;
 y = 0;
 x = 0;
 n6 = document.getElementById && !document.all;
@@ -69,7 +69,7 @@ if (ie || n6) {
         i / 2 +
         "px;background:#ff0000;font-size:" +
         i / 2 +
-        '"></div>'
+        'px;pointer-events:none;z-index:2;"></div>'
     );
 }
 
@@ -116,14 +116,16 @@ window.onload = function () {
     for (var i = 0; i < sparkles; i++) {
       var rats = createDiv(3, 3);
       rats.style.visibility = "hidden";
-      rats.style.zIndex = "999";
+      rats.style.zIndex = "2";
+      rats.style.pointerEvents = "none";
       document.body.appendChild((tiny[i] = rats));
       starv[i] = 0;
       tinyv[i] = 0;
       var rats = createDiv(5, 5);
       rats.style.backgroundColor = "transparent";
       rats.style.visibility = "hidden";
-      rats.style.zIndex = "999";
+      rats.style.zIndex = "2";
+      rats.style.pointerEvents = "none";
       var rlef = createDiv(1, 5);
       var rdow = createDiv(5, 1);
       rats.appendChild(rlef);
@@ -280,6 +282,8 @@ function createDiv(height, width) {
   div.style.height = height + "px";
   div.style.width = width + "px";
   div.style.overflow = "hidden";
+  div.style.pointerEvents = "none";
+  div.style.zIndex = "2";
   return div;
 }
 
