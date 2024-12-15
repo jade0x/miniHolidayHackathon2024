@@ -37,6 +37,11 @@ aside {
   background-color: #c6c6c6;
 }
 
+.right-sidebar,
+.left-sidebar {
+  font-size: 1.2rem;
+}
+
 main {
   background: #ffffff;
   width: 100%;
@@ -64,9 +69,19 @@ h3 {
   text-align: center;
 }
 
+h4 {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: white;
+  text-shadow: 1px 0 2px black;
+  background-color: #284ac8;
+}
+
 nav {
   display: flex;
   flex-direction: column;
+  margin-left: 4px;
 }
 
 nav a:hover {
@@ -256,12 +271,18 @@ a.social-button {
   font-size: 1rem;
 }
 
-#visitor-count {
+.sidebar-item {
+  background-color: white;
+  padding-bottom: 3px;
+}
+
+#visit-count {
   margin: 2px;
   background-color: white;
   text-align: center;
   border: 2px solid black;
   border-radius: 10px;
+  font-size: 1.2rem;
 }
 
 @keyframes scroll {
