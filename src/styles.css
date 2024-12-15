@@ -141,7 +141,8 @@ nav a:hover {
 }
 
 #hackathon {
-  background-color: maroon;
+  background-color: lightblue;
+  padding: 0 15px;
 }
 
 .article-wrapper {
@@ -274,6 +275,7 @@ a.social-button {
 .sidebar-item {
   background-color: white;
   padding-bottom: 3px;
+  margin: 10px 0;
 }
 
 #visit-count {

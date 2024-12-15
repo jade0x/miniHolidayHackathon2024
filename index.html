@@ -118,21 +118,21 @@
             </div>
             <div class="column-2">
               <p>
-                Welcome Codedex Team! Thank you for a cool hackathon idea, and
-                sacrificing your weekend!! This is a special feature just for
-                you.
+                <strong>Welcome Codedex Team! </strong>
                 <br />
-                Don't forget to check about this page!
+                Thank you for hosting another hackathon, and with such a cool
+                theme. Extra big thank you for sacrificing your weekend!
+                <br />
+                Don't forget to check
+                <a href="/src/content/aboutpage.html">about this page</a>!
               </p>
               <button onClick="changeBG()">
-                <img src="src/img/click-here.gif" alt="" />
+                <img src="src/img/click-here.gif" alt="snow animation" />
               </button>
               <p>
-                Hello Hackers! Congratulations on joining the madness so close
-                to Christmas, I hope your family was understanding that code is
-                lyfe &lt;3 <br />
-                Please clap for me if you like my page! Sign my guestbook if you
-                are a legend.
+                <strong>Hello Hackers!</strong>
+                Congratulations on joining the madness so close to Christmas, I
+                hope your family was understanding that code is lyfe &lt;3
               </p>
             </div>
           </div>
@@ -212,18 +212,15 @@
         <p>Additional content or widgets can go here.</p>
         <div class="sidebar-item">
           <h4>'*•.¸♡ Page Hits! ♡¸.•*'</h4>
-          <div id="visit-count">Loading visits...</div>
-          <script>
-            function cb(response) {
-              document.getElementById(
-                "visit-count"
-              ).innerText = `This page has been visited ${response.value} times`;
-            }
-          </script>
-          <script
-            async
-            src="https://api.countapi.xyz/hit/holidayhack2024.netlify.app/visits?callback=cb"
-          ></script>
+          <div id="visit-count">This is visit #0 &lt;3</div>
+        </div>
+        <div class="sidebar-item">
+          <h4>'*•.¸♡ Currently ♡¸.•*'</h4>
+          <ul>
+            <li><strong>Reading:</strong></li>
+            <li><strong>Watching:</strong></li>
+            <li><strong>Listening to:</strong></li>
+          </ul>
         </div>
         <div>clap fpr me</div>
         <div>music player</div>
